@@ -53,7 +53,7 @@ int main()
 	int encrypt = rsa_encrypt(rpp, text, re);
 	if(encrypt)
 	{
-		printf("encryptが失敗しました e: %d\n", encrypt);
+		fprintf(stderr, "encryptが失敗しました e: %d\n", encrypt);
 		return 1;
 	}
 	
@@ -72,7 +72,7 @@ int main()
 		
 	if(decrypt)
 	{
-		printf("decryptが失敗しました e: %d\n", decrypt);
+		fprintf(stderr, "decryptが失敗しました e: %d\n", decrypt);
 		return 1;
 	}
 		
